@@ -1,0 +1,35 @@
+{
+    "name":"YoutubeShortBad",
+    "description":"Dunno if this is gonna ever be useful to anyone, but hey, it's useful for me",
+    "version":"1.0",
+    "manifest_version": 3,
+    "icons":{
+        "16":"icon/icon16.png",
+        "48":"icon/icon48.png",
+        "128":"icon/icon128.png"
+    },
+    "action":{
+        "default_icon":{
+            "16": "icon/icon16.png",
+            "48": "icon/icon48.png",
+            "128": "icon/icon128.png"
+        },
+        "default_popup":"popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions":["activeTab", "tabs", "storage", "contextMenus", "commands"],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "commands": {
+        "kill_ytb_short": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+S"
+            },
+            "description": "Trigger action with Ctrl+Shift+S"
+        }
+    }
+}
+

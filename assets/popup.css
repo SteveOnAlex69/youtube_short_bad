@@ -6,13 +6,17 @@
     --accent-col: #009578;
 }
 
+body{
+    background-color: #fdedec;
+}
+
 .flex{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .text{
@@ -86,4 +90,19 @@
 
 .checkbox-inp:checked ~ .checkbox-visual::after {
     transform: translateX(calc(var(--height) * 1.1));
+}
+
+#user_manual {
+}
+
+#not_shady_link{
+    text-decoration: none;
+    font-size: 10px;
+    color: #626567;
+
+    transition: transform 0.2s;
+}
+
+#not_shady_link:hover{
+    transform: scale(1.1);
 }

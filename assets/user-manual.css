@@ -1,0 +1,44 @@
+*{
+    font-size: 13px;
+    font-family: "Consolas";
+    color:black;
+
+    --accent-col: #009578;
+}
+
+body{
+    background-color: #fdedec;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#title{
+    font-size: 30px;
+}
+
+#back_to_gui{
+    
+}
+
+#not_shady_link{
+    text-decoration: none;
+    font-size: 13px;
+    color: #626567;
+
+    transition: transform 0.2s;
+}
+
+#not_shady_link:hover{
+    transform: scale(1.1);
+}
